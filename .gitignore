@@ -1,3 +1,7 @@
+# Local Config Files
+Auth.json
+UserMappings.json
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

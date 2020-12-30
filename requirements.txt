@@ -1,0 +1,2 @@
+requests
+https://codeload.github.com/andyloree/python-plexapi/legacy.tar.gz/8635727cd6d90099da9fbe9a540ae0c54cac19f7
