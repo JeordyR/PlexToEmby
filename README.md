@@ -6,7 +6,7 @@ This intendend as a migration tool, not something to run consistently to keep it
 
 Tested with a server with a PlexPass user and several managed users (invited friends, not home users), not sure how it would fare in other conditions.
 
-The library/section names in Plex and Emby must match for this to work currently. The check is case-insenstivie, so "TV Shows" on Plex and "Tv Shows" on Emby would still match. Any Plex libraries not matched to an Emby library will be skipped.
+The library/section names in Plex and Emby must match for this to work currently. The check is case-insensitive, so "TV Shows" on Plex and "Tv Shows" on Emby would still match. Any Plex libraries not matched to an Emby library will be skipped.
 
 ### How To Use
 
