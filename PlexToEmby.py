@@ -28,6 +28,13 @@ def main():
 
         print(f"\n\nBeginning sync for {user}...")
 
+        if not credentials["Emby"]:
+            print("\tUser was not found in Emby, no ID present in Auth.json for them, skipping...")
+            continue
+        elif not credentials["Plex"]:
+            print("User was not found in Plex, no token present in Auth.json for them, skipping...")
+            continue
+
         emby = Emby(server=emby_url, api_key=emby_api_key, user_id=credentials["Emby"])
         plex = plexapi.server.PlexServer(token=credentials["Plex"], baseurl=plex_url)
         sections = plex.library.sections()
