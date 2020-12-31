@@ -40,8 +40,9 @@ def setup_auth(force: bool = False) -> dict:
 
             for user, plex_user in user_mappings.items():
                 auth_info[user] = {}
-                auth_info[user]["Plex"] = plex_auth.get(plex_user, "")
-                auth_info[user]["Emby"] = emby_auth.get(user, "")
+                auth_info[user]["PlexUser"] = plex_user
+                auth_info[user]["PlexToken"] = plex_auth.get(plex_user, "")
+                auth_info[user]["EmbyId"] = emby_auth.get(user, "")
         else:
             for plex_user, plex_token in plex_auth.items():
                 auth_info[plex_user] = {"Plex": plex_token, "Emby": emby_auth.get(plex_user, "")}
